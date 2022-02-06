@@ -8,7 +8,7 @@ export default class Start extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            amount: '0.00',
+            amount: '0',
             currency: 'GBP',
             percent: '5'
         };
@@ -54,7 +54,7 @@ export default class Start extends Component {
     return (
     <div>
         <Nav />
-        <div className='flex w-screen h-[85vh] justify-center items-center antialiased'>
+        <div className='flex w-screen h-[85vh] justify-center items-center antialiased px-4'>
             <form id="formMain" className='block'>
                 <span className='mb-2 text-gray-200 text-xs font-normal block'>Select currency and start typing total amount</span>
                 <select value={this.state.currency} onInput={this.handleCurrency} className='block md:inline p-3 px-4 text-xl bg-gray-700 text-white focus:outline-none'>
