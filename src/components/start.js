@@ -55,7 +55,7 @@ export default class Start extends Component {
     <div>
         <Nav />
         <div className='flex w-screen h-[75vh] justify-center items-center antialiased '>
-            <form id="formMain" className='block px-8 lg:px-1'>
+            <form id="formMain" className='block mx-8 lg:px-1'>
                 <span className='mb-2 text-gray-200 text-xs font-normal block'>Select currency and start typing total amount</span>
                 <select value={this.state.currency} onInput={this.handleCurrency} className='block md:inline p-3 px-4 text-xl bg-gray-700 text-white focus:outline-none'>
                     <option value=''>No Currency</option>
@@ -76,9 +76,9 @@ export default class Start extends Component {
                     <option value='AED'>UAE Dirham (AED)</option>
                 </select>
 
-                <input type='number' value={this.state.amount} onInput={this.handleChange} className='block mt-5 md:mt-0 md:inline p-3 px-4 bg-gray-700 text-xl focus:outline-none text-white' min='1' minLength='1' id='customValue' required='required'/> 
+                <input type='number' value={this.state.amount} onChange={this.handleChange} className='block mt-5 md:mt-0 md:inline p-3 px-4 bg-gray-700 text-xl focus:outline-none text-white' min='1' minLength='1' id='customValue' required='required'/> 
 
-                <div className='block mt-3'><input type='range' min='1' max='80' value={this.state.percent} onInput={this.handleSlider} className='w-2/3'/>
+                <div className='block mt-3'><input type='range' min='1' max='80' value={this.state.percent} onChange={this.handleSlider} className='w-2/3'/>
                 <span className='tipRate text-white px-3 font-extrabold text-sm'>{this.state.percent}%</span>
                 <span className='mb-2 text-gray-200 text-[12px] font-normal block'>How much do you want to tip?</span>
                 </div>

@@ -4,6 +4,7 @@
   -webkit-appearance: none;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 
 body {
   width: 100vw;
-  overflow-x: hidden
 }
 
 /*
@@ -492,6 +492,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -607,11 +612,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-\[9px\]{
   padding-left: 9px;
   padding-right: 9px;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .px-4{
