@@ -9,7 +9,7 @@ export default class About extends Component {
     <div>
       <Nav />
       <center>
-        <div class='flex w-screen h-[90vh] justify-center items-center'>
+        <div class='flex w-screen h-[85vh] justify-center items-center'>
       <div className='mx-0 antialiased'>
         
         <div className='block'><img src={logo} class='w-2/6 lg:w-1/6'/></div>

@@ -524,8 +524,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[90vh\]{
-  height: 90vh;
+.h-\[85vh\]{
+  height: 85vh;
 }
 
 .h-8{
