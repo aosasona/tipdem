@@ -730,10 +730,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 16.666667%;
   }
 
-  .lg\:w-auto{
-    width: auto;
-  }
-
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;

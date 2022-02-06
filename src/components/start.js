@@ -50,7 +50,7 @@ export default class Start extends Component {
     <div>
         <Nav />
         <div className='flex w-screen h-[78vh] justify-center items-center antialiased '>
-            <form id="formMain" className='block w-5/6 lg:w-auto'>
+            <form id="formMain" className='block px-3'>
                 <span className='mb-2 text-gray-200 text-xs font-normal block'>Select currency and start typing total amount</span>
                 <select value={this.state.currency} onInput={this.handleCurrency} className='block md:inline p-3 px-4 text-xl bg-gray-700 text-white focus:outline-none'>
                     <option value=''>No Currency</option>
