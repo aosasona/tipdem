@@ -608,6 +608,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 9px;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -733,6 +738,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-1\/6{
     width: 16.666667%;
+  }
+
+  .lg\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .lg\:text-sm{
