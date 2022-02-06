@@ -71,7 +71,7 @@ export default class Start extends Component {
                     <option value='AED'>UAE Dirham (AED)</option>
                 </select>
 
-                <input type='number' value={this.state.amount} onChange={this.handleChange} className='block mt-5 md:mt-0 md:inline p-3 px-4 bg-gray-700 text-xl focus:outline-none text-white' min='1' minLength='1' id='customValue' required='required'/> 
+                <input type='number' value={this.state.amount} onChange={this.handleChange} className='block mt-5 md:mt-0 md:inline p-3 px-4 bg-gray-700 text-xl focus:outline-none text-white' min='1' minLength='1' id='customValue' required='required' placeholder='0.00'/> 
 
                 <div className='block mt-3'>
                     <input type='range' min='1' max='80' value={this.state.percent} onChange={this.handleSlider} className='w-2/3' id='customTip'/>
