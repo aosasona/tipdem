@@ -3,8 +3,6 @@
     -webkit-appearance: none;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    
-
 }
 
 html {
@@ -12,6 +10,7 @@ html {
 }
 body {
     width: 100vw;
+    box-sizing: border-box;
 }
 @tailwind base;
 @tailwind components;
