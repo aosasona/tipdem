@@ -3,6 +3,7 @@
 *{
   -webkit-appearance: none;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -491,11 +492,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -536,8 +532,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-\[60vh\]{
-  height: 60vh;
+.h-\[75vh\]{
+  height: 75vh;
 }
 
 .w-screen{
@@ -611,6 +607,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-\[9px\]{
   padding-left: 9px;
   padding-right: 9px;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-4{
