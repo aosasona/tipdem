@@ -6,7 +6,7 @@ export default class Nav extends Component {
   render() {
     return (
     <div>
-        <div className='flex p-5 px-2 w-screen justify-between items-center'>
+        <div className='flex p-5 px-3 w-screen justify-between items-center'>
         <div className='flex items-center'>
             <img src={logo} className='w-8 h-8'/>
             <span class="text-sky-600 font-extrabold text-[20px]">TipDem</span>

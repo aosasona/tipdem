@@ -20,8 +20,21 @@ export default class Start extends Component {
     
       handleChange(a) {
         this.setState({amount: a.target.value});
-        var amount = this.state.amount;
-        var tipRate = this.state.percent;
+        this.runtip();
+        
+      }    
+      handleCurrency(e) {
+          this.setState({currency: e.target.value})
+
+      }
+      handleSlider(p) {
+          this.setState({percent : p.target.value})
+          this.runtip()
+          
+      }
+      runtip() {
+        var amount = document.getElementById('customValue').value;
+        var tipRate = document.getElementById('customTip').value;
         var tipValue = document.querySelector('#tipValue');
 
         
@@ -30,31 +43,13 @@ export default class Start extends Component {
             var totalTipFormat = totalTip.toLocaleString(undefined, { minimumFractionDigits: 2 });
 
             tipValue.innerText = totalTipFormat;
-      }    
-      handleCurrency(e) {
-          this.setState({currency: e.target.value})
-
-      }
-      handleSlider(p) {
-          this.setState({percent : p.target.value})
-          
-          var amount = this.state.amount;
-          var tipRate = this.state.percent;
-          var tipValue = document.querySelector('#tipValue');
-  
-            var perc = tipRate/100;
-            var totalTip = perc * amount;
-            var totalTipFormat = totalTip.toLocaleString(undefined, { minimumFractionDigits: 2 });
-  
-        tipValue.innerText = totalTipFormat;
-          
       }
 
   render() {
     return (
     <div>
         <Nav />
-        <div className='flex w-screen h-[75vh] justify-center items-center antialiased '>
+        <div className='flex w-screen h-[78vh] justify-center items-center antialiased '>
             <form id="formMain" className='block mx-8 lg:px-1'>
                 <span className='mb-2 text-gray-200 text-xs font-normal block'>Select currency and start typing total amount</span>
                 <select value={this.state.currency} onInput={this.handleCurrency} className='block md:inline p-3 px-4 text-xl bg-gray-700 text-white focus:outline-none'>
@@ -78,7 +73,8 @@ export default class Start extends Component {
 
                 <input type='number' value={this.state.amount} onChange={this.handleChange} className='block mt-5 md:mt-0 md:inline p-3 px-4 bg-gray-700 text-xl focus:outline-none text-white' min='1' minLength='1' id='customValue' required='required'/> 
 
-                <div className='block mt-3'><input type='range' min='1' max='80' value={this.state.percent} onChange={this.handleSlider} className='w-2/3'/>
+                <div className='block mt-3'>
+                    <input type='range' min='1' max='80' value={this.state.percent} onChange={this.handleSlider} className='w-2/3' id='customTip'/>
                 <span className='tipRate text-white px-3 font-extrabold text-sm'>{this.state.percent}%</span>
                 <span className='mb-2 text-gray-200 text-[12px] font-normal block'>How much do you want to tip?</span>
                 </div>
